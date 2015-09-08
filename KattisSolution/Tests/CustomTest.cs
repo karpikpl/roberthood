@@ -4,11 +4,11 @@ using NUnit.Framework;
 
 namespace KattisSolution.Tests
 {
-    [Ignore]
     [TestFixture]
     [Category("sample")]
     public class CustomTest
     {
+        [Ignore]
         [Test]
         public void SampleTest_WithStringData_Should_Pass()
         {
@@ -24,6 +24,24 @@ namespace KattisSolution.Tests
                 // Assert
                 Assert.That(result, Is.EqualTo(expectedAnswer));
             }
+        }
+
+        [Test]
+        public void CalculateDistance()
+        {
+            //-612 -649
+            //619 898
+            //919 948
+            //-847 -224
+            //-112 -672
+            //819 658
+            //-42 -858
+            //-287 661
+            //799 1
+            //-696 249
+
+            // Arrange
+            Point a = new Point(918, 948);
         }
     }
 }

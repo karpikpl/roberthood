@@ -35,10 +35,9 @@ namespace KattisSolution.Tests
                     var result = Encoding.UTF8.GetString(outStream.ToArray());
 
                     // Assert
-                    Assert.That(result, Is.EqualTo(expectedResult));
+                    Assert.That(Double.Parse(result), Is.EqualTo(Double.Parse(expectedResult)).Within(0.000001));
                 }
             }
-
         }
     }
 }
